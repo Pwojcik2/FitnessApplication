@@ -3,9 +3,9 @@ import { SelectedPage } from "@/shared/types"
 import ActionButton from "@/shared/ActionButton"
 import HomePageText from '@/assets/HomePageText.png'
 import HomePageGraphic from '@/assets/HomePageGraphic.png'
-import SponsorRednull from '@/assets/SponsorRedBull.png'
+import SponsorRedbull from '@/assets/SponsorRedBull.png'
 import SponsorForbes from '@/assets/SponsorForbes.png'
-import SponsorFrotune from '@/assets/SponsorFortune.png'
+import SponsorFortune from '@/assets/SponsorFortune.png'
 import AnchorLink from "react-anchor-link-smooth-scroll"
 
 type Props = {
@@ -61,7 +61,17 @@ const Home = ({ setSelectedPage } : Props) => {
         </div>
 
         {/* SPONSORS */}
-
+        {isAboveMediumScreens && (
+            <div>
+                <div>
+                    <div>
+                        <img alt="redbull-sponsor" src={SponsorRedbull} />
+                        <img alt="redbull-sponsor" src={SponsorForbes} />
+                        <img alt="redbull-sponsor" src={SponsorFortune} />
+                    </div>
+                </div>
+            </div>            
+        )}
     </section>
   )
 }
