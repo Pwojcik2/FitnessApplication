@@ -21,13 +21,13 @@ const Home = ({ setSelectedPage } : Props) => {
     className="gap-16 bg-gray-20 py-10 md:h-full md:pb-0"
     >
         {/* IMAGE AND HEADER */}
-        <div>
+        <div className="md:flex mx-auto w-5/6 items-center justify-center md:h-5/6">
             {/*MAIN HEADER  */}
-            <div>
+            <div className="z-10 mt-32 md:basis-3/5">
                 {/* HEADINGS */}
-                <div>
-                    <div>
-                        <div>
+                <div className="md:-mt-20">
+                    <div className="relative">
+                        <div className="before:absolute">
                             <img alt="home-page-text" src={HomePageText}/>
                         </div>
                     </div>
@@ -66,8 +66,8 @@ const Home = ({ setSelectedPage } : Props) => {
                 <div>
                     <div>
                         <img alt="redbull-sponsor" src={SponsorRedbull} />
-                        <img alt="redbull-sponsor" src={SponsorForbes} />
-                        <img alt="redbull-sponsor" src={SponsorFortune} />
+                        <img alt="forbes-sponsor" src={SponsorForbes} />
+                        <img alt="fortune-sponsor" src={SponsorFortune} />
                     </div>
                 </div>
             </div>            
